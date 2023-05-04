@@ -1,23 +1,40 @@
-
 import 'package:get/get.dart';
 
 import '../../../const/export/export.dart';
 
 class BodyDescription extends StatelessWidget {
-  const BodyDescription({
-    super.key,
-    required this.image,
-    required this.title,
-    required this.description,
-  });
-
+  const BodyDescription(
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.description});
   final String image;
   final String title;
   final String description;
-
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Responsive.isMobile(context)||Responsive.isTablet(context)? Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: CircleAvatar(
+          radius: 100,
+            backgroundImage: AssetImage(image,),
+
+          ),
+        ),
+        Text(
+          title,
+          style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: appColor.kBlackColor),
+        ),
+        SizedBox(height: 2.h),
+        Text(
+          description,
+          style: Theme.of(context).textTheme.bodySmall!.copyWith(color: appColor.kTextColor),
+          overflow: TextOverflow.visible,
+        ),
+      ],
+    ):Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Expanded(
@@ -44,12 +61,12 @@ class BodyDescription extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: Theme.of(context).textTheme.bodyLarge,
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(color: appColor.kBlackColor),
                   ),
                   SizedBox(height: 2.h),
                   Text(
                     description,
-                    style: Theme.of(context).textTheme.bodySmall,
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(color: appColor.kTextColor),
                     overflow: TextOverflow.visible,
                   ),
                 ],

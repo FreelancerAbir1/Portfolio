@@ -31,3 +31,12 @@ export 'package:portfolio/home%20page/component/about/get_to_know.dart';
 export 'package:portfolio/home%20page/component/about/my_data.dart';
 export 'package:portfolio/home%20page/component/about/who_am_i.dart';
 export 'package:portfolio/home%20page/component/social_buttons.dart';
+export 'package:portfolio/home%20page/home_page.dart';
+export 'package:portfolio/bindings/bindings.dart';
+export 'package:portfolio/const/method/getPage.dart';
+export 'package:portfolio/home%20page/home_page.dart';
+export 'package:portfolio/responsive/responsive.dart';
+export 'package:responsive_sizer/responsive_sizer.dart';
+
+export 'package:portfolio/const/string/string.dart';
+export 'package:portfolio/home%20page/component/drawer_bar.dart';

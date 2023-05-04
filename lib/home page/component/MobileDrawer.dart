@@ -7,8 +7,7 @@ class MobileDrawer extends StatelessWidget {
       child: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(10.sp),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
             children: [
               Signature(),
               SwitchListTile(
@@ -16,24 +15,24 @@ class MobileDrawer extends StatelessWidget {
                 value: true,
                 onChanged: (v) {},
               ),
-              WebAppBar(
+              DrawerBar(
                 text: 'Resume',
                 onTap: () {},
                 color: appColor.kPrimaryColor,
               ),
-              WebAppBar(
+              DrawerBar(
                 text: 'Contact',
                 onTap: () {},
               ),
-              WebAppBar(
+              DrawerBar(
                 text: 'projects',
                 onTap: () {},
               ),
-              WebAppBar(
+              DrawerBar(
                 text: 'Services',
                 onTap: () {},
               ),
-              WebAppBar(
+              DrawerBar(
                 text: 'Home',
                 onTap: () {},
               ),

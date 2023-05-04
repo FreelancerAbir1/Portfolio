@@ -22,31 +22,31 @@ class MyData extends StatelessWidget {
                 style: GoogleFonts.kalam(color: appColor.kBlackColor),
                 children: [
                   TextSpan(
-                      text: 'Abirul Islam Abir  \n',
+                      text: '$fullName \n',
                       style: GoogleFonts.kalam(
                           fontWeight: FontWeight.bold,
                           color: appColor.kBlackColor)),
                   TextSpan(
-                      text: 'Age : ',
+                      text: '$ageText',
                       style: GoogleFonts.kalam(color: appColor.kBlackColor)),
                   TextSpan(
-                      text: '22 \n',
+                      text: '$age \n',
                       style: GoogleFonts.kalam(
                           fontWeight: FontWeight.bold,
                           color: appColor.kBlackColor)),
                   TextSpan(
-                      text: 'Email : ',
+                      text: '$emailText ',
                       style: GoogleFonts.kalam(color: appColor.kBlackColor)),
                   TextSpan(
-                      text: 'abir80503@gmail.com \n',
+                      text: '$email \n',
                       style: GoogleFonts.kalam(
                           fontWeight: FontWeight.bold,
                           color: appColor.kBlackColor)),
                   TextSpan(
-                      text: 'From : ',
+                      text: '$fromText ',
                       style: GoogleFonts.kalam(color: appColor.kBlackColor)),
                   TextSpan(
-                      text: 'Dhaka, Bangladesh',
+                      text: '$from',
                       style: GoogleFonts.kalam(
                           fontWeight: FontWeight.bold,
                           color: appColor.kBlackColor)),
@@ -59,7 +59,7 @@ class MyData extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 AutoSizeText(
-                  'I have Skilled:',
+                  '$iHaveSkilled',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18.sp,
@@ -67,23 +67,23 @@ class MyData extends StatelessWidget {
                 ),
                 RichText(
                   text: TextSpan(
-                    text: '1.Flutter development \n',
+                    text: '$aSkilled \n',
                     style: GoogleFonts.kalam(color: appColor.kBlackColor),
                     children: [
                       TextSpan(
-                          text: '2.Flutter Firebase\n',
+                          text: '$bSkilled\n',
                           style:
                           GoogleFonts.kalam(color: appColor.kBlackColor)),
                       TextSpan(
-                          text: '4.Mobile UI design \n',
+                          text: '$cSkilled \n',
                           style:
                           GoogleFonts.kalam(color: appColor.kBlackColor)),
                       TextSpan(
-                          text: '5.Android & IOS design \n ',
+                          text: '$dSkilled \n ',
                           style:
                           GoogleFonts.kalam(color: appColor.kBlackColor)),
                       TextSpan(
-                          text: '6.Dart & Flutter',
+                          text: '$eSkilled ',
                           style:
                           GoogleFonts.kalam(color: appColor.kBlackColor)),
                     ],

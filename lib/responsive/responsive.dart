@@ -11,7 +11,7 @@ class Responsive extends StatelessWidget {
     required this.tablet,
     required this.desktop,
   }) : super(key: key);
-
+static const routeName = '/';
   // screen sizes
   static bool isMobile(BuildContext context) =>
       MediaQuery.of(context).size.width < 600;
