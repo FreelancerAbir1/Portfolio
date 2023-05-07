@@ -1,5 +1,5 @@
 
-import '../../const/export/export.dart';
+import '../../../const/export/export.dart';
 
 class TitleName extends StatelessWidget {
   const TitleName({

@@ -1,7 +1,7 @@
 
 import 'package:get/get.dart';
 
-import '../../const/export/export.dart';
+import '../../../const/export/export.dart';
 
 class BackgroundImage extends StatelessWidget {
   const BackgroundImage({

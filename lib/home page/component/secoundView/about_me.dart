@@ -2,8 +2,8 @@
 
 import '../../../const/export/export.dart';
 
-class AboutMe extends StatelessWidget {
-  const AboutMe({
+class AboutMee extends StatelessWidget {
+  const AboutMee({
     super.key,
     required this.text,
   });

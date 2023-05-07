@@ -2,7 +2,7 @@ import 'package:portfolio/const/colors/colors.dart';
 import 'package:portfolio/widgets/hover_builder.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../../const/export/export.dart';
+import '../../../const/export/export.dart';
 
 class WebAppBar extends StatelessWidget {
   const WebAppBar(

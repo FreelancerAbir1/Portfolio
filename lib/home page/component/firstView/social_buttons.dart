@@ -1,5 +1,5 @@
 
-import '../../const/export/export.dart';
+import '../../../const/export/export.dart';
 
 class SocialButtons extends StatelessWidget {
   const SocialButtons({

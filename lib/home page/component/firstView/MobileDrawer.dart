@@ -1,5 +1,7 @@
- import 'package:portfolio/const/export/export.dart';
-class MobileDrawer extends StatelessWidget {
+import 'package:get/get.dart';
+import 'package:portfolio/const/export/export.dart';
+
+class MobileDrawer extends GetView<HomeScreenController> {
   const MobileDrawer({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -31,6 +33,12 @@ class MobileDrawer extends StatelessWidget {
               DrawerBar(
                 text: 'Services',
                 onTap: () {},
+              ),
+              DrawerBar(
+                text: 'About',
+                onTap: () {
+                  controller.scroll(Get.height);
+                },
               ),
               DrawerBar(
                 text: 'Home',

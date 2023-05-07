@@ -1,6 +1,6 @@
 
 
-import '../../const/export/export.dart';
+import '../../../const/export/export.dart';
 
 class PortfolioText extends StatelessWidget {
   const PortfolioText({

@@ -1,5 +1,5 @@
 
-import '../../const/export/export.dart';
+import '../../../const/export/export.dart';
 
 class IntroText extends StatelessWidget {
   const IntroText({
