@@ -5,7 +5,7 @@ import 'package:portfolio/home%20page/component/firstView/portfolio_card.dart';
 import '../../../../const/export/export.dart';
 
 class Tablet extends StatelessWidget {
-  Tablet({Key? key}) : super(key: key);
+  const Tablet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +16,13 @@ class Tablet extends StatelessWidget {
       child: Swiper(
         autoplay: true,
         itemBuilder: (BuildContext context, int index) {
-          return OverflowBox(
+          return const OverflowBox(
             minHeight: 200,
             minWidth: 250,
             maxWidth: 300,
             maxHeight: 250,
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: PortfolioCard(
                   secoundImg: 'assets/projects/android.png',
                   firstImage: 'assets/projects/covid.png',

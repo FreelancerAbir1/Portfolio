@@ -6,14 +6,14 @@ import 'view/desktop.dart';
 import 'view/mobile.dart';
 
 class fourView extends StatelessWidget {
-  fourView({Key? key}) : super(key: key);
+  const fourView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: Get.width,
       child: Column(
-        children: [
+        children: const [
           PortfolioText(
             text: 'Portfolio',
           ),

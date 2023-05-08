@@ -9,11 +9,11 @@ class Description extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 200,
       child: AnimatedTextKit(
         isRepeatingAnimation: true,
-        pause: Duration(seconds: 2),
+        pause: const Duration(seconds: 2),
         totalRepeatCount: 1,
         animatedTexts: [
           TypewriterAnimatedText(

@@ -10,11 +10,11 @@ class FirstView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: Get.height,
+    return SizedBox(
+      height: Responsive.isTablet(context) ? Get.height + 10.h : Get.height,
       width: Get.width,
       child: Stack(
-        children: [
+        children: const [
           BackgroundImage(img: ImageUrl.portfolioImage),
           Responsive(mobile: Mobile(), tablet: Tablet(), desktop: DeskTop())
         ],

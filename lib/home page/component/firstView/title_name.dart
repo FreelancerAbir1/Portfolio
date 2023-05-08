@@ -16,7 +16,7 @@ class TitleName extends StatelessWidget {
             fontSize: 22.sp, color: appColor.kBlackColor),
         children: [
           TextSpan(
-              text: '$lastName',
+              text: lastName,
               style: GoogleFonts.playball(
                   fontSize: 23.sp,
                   fontWeight: FontWeight.bold,

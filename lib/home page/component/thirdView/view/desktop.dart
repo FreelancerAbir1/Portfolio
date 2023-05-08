@@ -7,14 +7,14 @@ class Desktop extends GetView<HomeScreenController> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: Get.width,
       child: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+            children: const [
               SkillCard(
                   firstImage: 'assets/services/app.png',
                   aText: 'Android App Development via Flutter\n',
@@ -37,7 +37,7 @@ class Desktop extends GetView<HomeScreenController> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+            children: const [
               SkillCard(
                   firstImage: 'assets/services/fiverr.png',
                   aText: 'Android App Development via Flutter\n',

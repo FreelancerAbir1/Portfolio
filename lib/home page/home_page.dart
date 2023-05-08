@@ -1,11 +1,10 @@
 import 'package:get/get.dart';
-import 'package:portfolio/home%20page/component/firstView/web_app_bar.dart';
 
 import '../const/export/export.dart';
 import 'component/body.dart';
 
 class HomeScreen extends GetView<HomeScreenController> {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,30 +13,30 @@ class HomeScreen extends GetView<HomeScreenController> {
       builder: (controller) {
         return Scaffold(
           drawer: Responsive.isMobile(context) || Responsive.isTablet(context)
-              ? MobileDrawer()
+              ? const MobileDrawer()
               : null,
           appBar: controller.isVisible.value
               ? AppBar(
                   title: Responsive.isMobile(context) ||
                           Responsive.isTablet(context)
                       ? null
-                      : Signature(),
+                      : const Signature(),
                   actions: [
                     Responsive.isMobile(context) || Responsive.isTablet(context)
-                        ? Signature()
+                        ? const Signature()
                         : HoverBuilder(builder: (isHover) {
                             return Row(
                               children: [
-                                WebAppBar(text: home),
+                                const WebAppBar(text: home),
                                 WebAppBar(
                                   text: about,
                                   onTap: () {
                                     controller.scroll(Get.height);
                                   },
                                 ),
-                                WebAppBar(text: services),
-                                WebAppBar(text: projects),
-                                WebAppBar(text: contacts),
+                                const WebAppBar(text: services),
+                                const WebAppBar(text: projects),
+                                const WebAppBar(text: contacts),
                                 WebAppBar(
                                     text: resume,
                                     color: appColor.kPrimaryColor.shade200),

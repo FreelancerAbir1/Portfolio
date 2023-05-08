@@ -1,5 +1,4 @@
 
-import 'package:get/get.dart';
 
 import '../../../const/export/export.dart';
 
@@ -26,7 +25,7 @@ class DrawerBar extends StatelessWidget {
               decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                        offset: Offset(0, 2),
+                        offset: const Offset(0, 2),
                         color: isHover
                             ? appColor.kPrimaryColor
                             : appColor.kTransparentColor,

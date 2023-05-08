@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Abirul Islam Abir',
           theme: ThemeData(
-            appBarTheme: AppBarTheme(
+            appBarTheme: const AppBarTheme(
                 backgroundColor: Colors.transparent,
                 elevation: 0,
                 foregroundColor: Colors.black

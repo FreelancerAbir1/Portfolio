@@ -1,6 +1,5 @@
 
 import 'package:get/get.dart';
-import 'package:portfolio/home%20page/component/firstView/web_app_bar.dart';
 
 import '../../../const/export/export.dart';
 
@@ -14,16 +13,16 @@ class DesktopAppBar extends  GetView<HomeScreenController>  {
     return HoverBuilder(builder: (isHover) {
       return Row(
         children: [
-          WebAppBar(text: home),
+          const WebAppBar(text: home),
           WebAppBar(
             text: about,
             onTap: () {
               controller.scroll(Get.height);
             },
           ),
-          WebAppBar(text: services),
-          WebAppBar(text: projects),
-          WebAppBar(text: contacts),
+          const WebAppBar(text: services),
+          const WebAppBar(text: projects),
+          const WebAppBar(text: contacts),
           WebAppBar(
               text: resume,
               color: appColor.kPrimaryColor.shade200),

@@ -8,12 +8,12 @@ class Mobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return    Container(
+    return    SizedBox(
             height: Responsive.isMobile(context) ? 90.h : null,
             width: Get.width,
             child: Column(
               children: [
-                BodyDescription(
+                const BodyDescription(
                     image: ImageUrl.portfolioImage,
                     title: bodyTitle,
                     description: bodyDes),
@@ -30,7 +30,7 @@ class Mobile extends StatelessWidget {
                 SizedBox(
                   height: 3.h,
                 ),
-                MyData()
+                const MyData()
               ],
             ),
           );

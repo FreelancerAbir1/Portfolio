@@ -28,7 +28,7 @@ class SkillCard extends StatelessWidget {
                       : Colors.grey.withOpacity(0.2),
                   spreadRadius: 5,
                   blurRadius: 5,
-                  offset: Offset(2, 3), // changes position of shadow
+                  offset: const Offset(2, 3), // changes position of shadow
                 ),
               ],
             ),
@@ -64,7 +64,7 @@ class SkillCard extends StatelessWidget {
                       : appColor.kBlackColor.withOpacity(0.050),
                   spreadRadius: 2,
                   blurRadius: 2,
-                  offset: Offset(1, 3), // changes position of shadow
+                  offset: const Offset(1, 3), // changes position of shadow
                 ),
               ],
             ),
@@ -79,7 +79,7 @@ class SkillCard extends StatelessWidget {
                   children: [
                     RichText(
                       text: TextSpan(
-                        text: '$aText',
+                        text: aText,
                         style: GoogleFonts.kalam(color: appColor.kBlackColor),
                         children: [
                           TextSpan(
@@ -89,11 +89,13 @@ class SkillCard extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       height: 02,
                       color: appColor.kPrimaryColor,
+                      endIndent: 20,
+                      indent: 20,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     CustomButton(

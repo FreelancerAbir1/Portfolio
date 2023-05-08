@@ -1,5 +1,3 @@
-import 'package:portfolio/home%20page/component/firstView/title_name.dart';
-import 'package:portfolio/home%20page/component/firstView/title_name.dart';
 
 import '../../../../const/export/export.dart';
 
@@ -14,20 +12,20 @@ class Tablet extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          PortfolioText(text: 'Welcome to my portfolio!'),
-          TitleName(
+          const PortfolioText(text: 'Welcome to my portfolio!'),
+          const TitleName(
             firstName: firstName,
             lastName: lastName,
           ),
-          IntroText(
+          const IntroText(
               oneTxt: 'A Friend :)',
               threeText: 'Let\'s get show this Portfolio!!!',
               twoTxt: 'Ui/Ux Responsive Designer!!'),
           SizedBox(height: 04.h),
-          Description(
+          const Description(
             text: portfolioDes,
           ),
-          SocialButtons()
+          const SocialButtons()
         ],
       ),
     );

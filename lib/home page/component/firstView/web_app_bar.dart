@@ -1,6 +1,3 @@
-import 'package:portfolio/const/colors/colors.dart';
-import 'package:portfolio/widgets/hover_builder.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../../const/export/export.dart';
 
@@ -29,7 +26,7 @@ class WebAppBar extends StatelessWidget {
                   decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(
-                            offset: Offset(0, 2),
+                            offset: const Offset(0, 2),
                             color: isHover
                                 ? appColor.kPrimaryColor
                                 : appColor.kTransparentColor,

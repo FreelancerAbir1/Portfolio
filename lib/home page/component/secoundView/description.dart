@@ -1,4 +1,3 @@
-import 'package:get/get.dart';
 
 import '../../../const/export/export.dart';
 
@@ -43,7 +42,7 @@ class BodyDescription extends StatelessWidget {
                 : 0,
             child: Align(
               alignment: Alignment.topLeft,
-              child: Container(
+              child: SizedBox(
                   height: 35.h,
                   child: BackgroundImage(
                     img: image,

@@ -8,7 +8,7 @@ class Tablet extends GetView<HomeScreenController> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 250,
       width: Get.width,
       child: Swiper(
@@ -21,8 +21,8 @@ class Tablet extends GetView<HomeScreenController> {
             maxHeight: 300,
             child: SkillCard(
                 firstImage: controller.servicesLogo[index]['img'].toString(),
-                aText: controller.servicesLogo[index]['bText'].toString(),
-                bText: controller.servicesLogo[index]['aText'].toString(),
+                aText: controller.servicesLogo[index]['aText'].toString(),
+                bText: controller.servicesLogo[index]['bText'].toString(),
                 name: controller.servicesLogo[index]['name'].toString()),
           );
         },

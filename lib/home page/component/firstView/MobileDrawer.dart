@@ -11,9 +11,9 @@ class MobileDrawer extends GetView<HomeScreenController> {
           padding: EdgeInsets.all(10.sp),
           child: ListView(
             children: [
-              Signature(),
+              const Signature(),
               SwitchListTile(
-                title: Text('Light Mode'),
+                title: const Text('Light Mode'),
                 value: true,
                 onChanged: (v) {},
               ),

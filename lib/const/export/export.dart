@@ -34,3 +34,10 @@ export 'package:carousel_slider/carousel_slider.dart';
 export 'package:portfolio/home%20page/component/firstView/intro_text.dart';
  export 'package:portfolio/const/string/string.dart';
 export 'package:portfolio/home%20page/component/firstView/drawer_bar.dart';
+export 'package:portfolio/home%20page/component/firstView/title_name.dart';
+
+export 'package:portfolio/home%20page/component/firstView/web_app_bar.dart';
+export 'package:portfolio/home%20page/component/secoundView/body.dart';
+export 'package:portfolio/home%20page/component/fourView/body.dart';
+export 'package:portfolio/home%20page/component/firstView/body.dart';
+export 'package:portfolio/home%20page/component/thirdView/body.dart';

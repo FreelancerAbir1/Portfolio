@@ -1,6 +1,5 @@
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
-import 'package:meta/meta.dart';
 
 import '../../const/export/export.dart';
 
@@ -48,8 +47,7 @@ class HomeScreenController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
-    super.onInit();
+     super.onInit();
     appBarController.addListener(() {
       if (appBarController.position.userScrollDirection ==
           ScrollDirection.reverse) {
@@ -64,15 +62,14 @@ class HomeScreenController extends GetxController {
 
   @override
   void dispose() {
-    // TODO: implement dispose
-    super.dispose();
+     super.dispose();
     appBarController.dispose();
   }
 
   void scrollToTop() {
     appBarController.animateTo(
       0,
-      duration: Duration(seconds: 3),
+      duration: const Duration(seconds: 3),
       curve: Curves.easeInOut,
     );
   }
@@ -81,7 +78,7 @@ class HomeScreenController extends GetxController {
     double middlePosition =  height;
     appBarController.animateTo(
       middlePosition,
-      duration: Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
   }

@@ -13,7 +13,7 @@ class BackgroundImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
         alignment: Alignment.centerRight,
-        child: Container(
+        child: SizedBox(
           height: Get.height,
           child: Image.asset(img,
               colorBlendMode: BlendMode.dstOut, fit: BoxFit.cover),

@@ -1,12 +1,4 @@
-import 'package:card_swiper/card_swiper.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/home%20page/component/secoundView/body.dart';
-import 'package:portfolio/home%20page/component/fourView/body.dart';
-import 'package:portfolio/home%20page/component/firstView/body.dart';
-import 'package:portfolio/home%20page/component/firstView/portfolio_card.dart';
-import 'package:portfolio/home%20page/component/firstView/title_name.dart';
-import 'package:portfolio/home%20page/component/thirdView/body.dart';
-import 'package:slider_side_menu/slider_side_menu.dart';
 
 import '../../const/export/export.dart';
 
@@ -49,8 +41,8 @@ class Body extends GetView<HomeScreenController> {
         children: [
           ListView(
             controller: controller.appBarController,
-            physics: BouncingScrollPhysics(),
-            children: [
+            physics: const BouncingScrollPhysics(),
+            children: const [
               FirstView(),
               SecoundView(),
               ThirdView(),
@@ -64,7 +56,7 @@ class Body extends GetView<HomeScreenController> {
                   onPressed: () {
                     controller.scrollToTop();
                   },
-                  child: Icon(Icons.arrow_circle_up)))
+                  child: const Icon(Icons.arrow_circle_up)))
         ],
       ),
     );

@@ -9,10 +9,10 @@ import 'view/tablet.dart';
   const ThirdView({Key? key}) : super(key: key); 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
         width: Get.width,
         child: Column(
-          children: [
+          children: const [
             WhatICanDo(
               text: 'What I can do?',
             ),

@@ -26,7 +26,7 @@ class PortfolioCard extends StatelessWidget {
                         : Colors.grey.withOpacity(0.2),
                     spreadRadius: 5,
                     blurRadius: 5,
-                    offset: Offset(2, 3), // changes position of shadow
+                    offset: const Offset(2, 3), // changes position of shadow
                   ),
                 ],
               ),
@@ -61,7 +61,7 @@ class PortfolioCard extends StatelessWidget {
                         : Colors.grey.withOpacity(0.2),
                     spreadRadius: 5,
                     blurRadius: 5,
-                    offset: Offset(2, 3), // changes position of shadow
+                    offset: const Offset(2, 3), // changes position of shadow
                   ),
                 ],
               ),

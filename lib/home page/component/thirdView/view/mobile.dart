@@ -17,8 +17,8 @@ class Mobile extends GetView<HomeScreenController> {
         itemBuilder: (BuildContext context, int index) {
           return SkillCard(
               firstImage: controller.servicesLogo[index]['img'].toString(),
-              aText: controller.servicesLogo[index]['bText'].toString(),
-              bText: controller.servicesLogo[index]['aText'].toString(),
+              aText: controller.servicesLogo[index]['aText'].toString(),
+              bText: controller.servicesLogo[index]['bText'].toString(),
               name: controller.servicesLogo[index]['name'].toString());
         },
         itemCount: controller.servicesLogo.length,

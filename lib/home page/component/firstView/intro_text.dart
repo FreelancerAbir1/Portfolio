@@ -25,7 +25,6 @@ class IntroText extends StatelessWidget {
               FadeAnimatedText(threeText),
             ],
             onTap: () {
-              print("Tap Event");
             },
           ),
         ),

@@ -12,25 +12,26 @@ class SecoundView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: Get.height + 100,
+    return SizedBox(
+      height:
+          Responsive.isTablet(context) ? Get.height + 30.w : Get.height + 15.h,
       width: Get.width,
       child: Column(
         mainAxisAlignment: Responsive.isMobile(context)
             ? MainAxisAlignment.start
             : MainAxisAlignment.center,
         children: [
-          AboutMee(
+          const AboutMee(
             text: aboutMe,
           ),
-          GetToKnowMe(
+          const GetToKnowMe(
             text: getToKnowMe,
           ),
-          WhoAmI(
+          const WhoAmI(
             text: whoAmI,
           ),
           SizedBox(height: 03.h),
-          Responsive(
+          const Responsive(
             mobile: Mobile(),
             tablet: Tablet(),
             desktop: Desktop(),
