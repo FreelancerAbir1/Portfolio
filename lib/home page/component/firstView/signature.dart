@@ -1,7 +1,8 @@
 
-import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+import '../../../const/export/export.dart';
 
 class Signature extends StatelessWidget {
   const Signature({Key? key}) : super(key: key);

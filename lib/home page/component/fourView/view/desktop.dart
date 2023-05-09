@@ -1,4 +1,3 @@
-import 'package:portfolio/home%20page/component/firstView/portfolio_card.dart';
 
 import '../../../../const/export/export.dart';
 

@@ -1,6 +1,5 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/home%20page/component/firstView/portfolio_card.dart';
 
 import '../../../../const/export/export.dart';
 

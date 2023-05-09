@@ -61,7 +61,7 @@ class HomeScreen extends GetView<HomeScreenController> {
                   ],
                 )
               : null,
-          body: Body(),
+          body: const Body(),
         );
       },
     );

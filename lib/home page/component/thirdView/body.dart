@@ -1,6 +1,4 @@
 import 'package:get/get.dart';
- import 'package:portfolio/home%20page/component/thirdView/des.dart';
-import 'package:portfolio/home%20page/component/thirdView/what_des.dart'; 
 import '../../../const/export/export.dart'; 
 import 'view/desktop.dart';
 import 'view/mobile.dart';
